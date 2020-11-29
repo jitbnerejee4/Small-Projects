@@ -1,0 +1,89 @@
+body{
+
+	font-family: roboto;  
+	background: #654ea3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*go to www.ulgradients.com for gradients */
+}
+
+h1{
+	background: #2980b9;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 24px;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	background: #fff;
+	height: 40px;
+	line-height: 40px; /* centering the text vertically */
+	color: #666;
+}
+
+/*nth-child(2n) means every second element
+nth-child(3n) means every third element. and so on*/
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+li:hover span{  /* when we hover over li we select the span */
+	width: 40px;
+	opacity: 1.0;
+}
+
+span{
+	background: #e74c3c;
+	width: 0px; /* setting width 0 so that the trash is hidden in left */
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	/*Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.*/
+	display: inline-block;
+	transition: 0.2s linear; /* liner means it will occur in constant speed */
+	opacity: 0;
+}
+
+input{
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	color: #2980b9;
+	border: 3px solid rgba(0, 0, 0, 0); /* this will hide the border created by brower around the input when we are not focusing it.*/
+}
+/* input:focus is a property which occurs when we click on input box; */
+input:focus {
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none; /* outline refers to that annoying highlight border we get when we click on inputbox */
+}
+
+.fa-plus{
+	float: right;
+}
+
+
+#container{
+	width: 360px;
+	margin: 100px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background: #f7f7f7;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
